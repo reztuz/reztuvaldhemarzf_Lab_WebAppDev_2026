@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Code Magazine</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -32px;
+            padding: 32px 24px;
+            color: #222;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 20px;
+            text-align: left;
+            border-bottom: 2px solid rgb(59, 108, 178);
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+        }
+
+        header {
+            background-color: #222;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+            gap: 24px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+        }
+
+        .page-content {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 230px;
+            gap: 32px;
+            align-items: start;
+            margin-top: 36px;
+        }
+
+        article h1 {
+            margin-top: 0;
+        }
+
+        .related-posts {
+            padding: 20px;
+            border-top: 4px solid rgb(59, 108, 178);
+            background-color: #f1f5f9;
+        }
+
+        .related-posts h2 {
+            margin-top: 0;
+            color: rgb(59, 108, 178);
+            font-size: 20px;
+        }
+
+        .related-posts ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .related-posts a {
+            color: #222;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            nav ul {
+                justify-content: flex-start;
+            }
+
+            .page-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        body > h1 {
+            margin-top: 36px;
+            text-align: center;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 16px 0;
+        }
+
+        .author img {
+            width: 56px;
+            height: 56px;
+            object-fit: cover;
+        }
+
+        .author p {
+            margin: 0;
+            color: #222;
+        }
+
+        .article-image {
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        .container > p {
+            padding: 0 24px;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 style="color: rgb(242, 243, 244);">📘 The Code Magazine</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" style="color: rgb(242, 243, 244);">Blog</a></li>
+                    <li><a href="#" style="color: rgb(242, 243, 244);">Challenges</a></li>
+                    <li><a href="#" style="color: rgb(242, 243, 244);">Flexbox</a></li>
+                    <li><a href="#" style="color: rgb(242, 243, 244);">CSS Grid</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-content">
+            <article>
+                <h1 style="color: rgb(59, 108, 178);">The Basic Language of the Web : HTML</h1>
+                <div class="author">
+                    <img src="laura-jones.jpg" alt="Laura Jones">
+                    <p><i>Posted by <strong style="color: rgb(0, 0, 0);">Laura Jones</strong> on Monday, June 21st 2027</i></p>
+                </div>
+                <img class="article-image" src="post-img.jpg" alt="Post Image">
+                <p>All modern websites and web applications are built using three <i>fundamental</i> technologies: HTML, CSS, and JavaScript. These are the languages of the web. In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.</p>
+                <h2 style="color: rgb(59, 108, 178);">What is HTML?</h2>
+                <p>HTML stands for <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup language that web developers use to structure and describe the content of a webpage (not a programming language).</p>
+                <p>HTML consists of elements that describe different types of content: paragraphs, links, headings, images, video, etc. Web browsers understand HTML and render HTML code as websites.</p>
+            </article>
+            <aside class="related-posts">
+                <h2>Related posts</h2>
+                <ul>
+                    <li><a href="#" style="color:rgb(59, 108, 178);">How to Learn Web Development</a></li>
+                    <li><a href="#" style="color:rgb(59, 108, 178);">The Unknown Powers of CSS</a></li>
+                    <li><a href="#" style="color:rgb(59, 108, 178);">Why JavaScript Is Awesome</a></li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
